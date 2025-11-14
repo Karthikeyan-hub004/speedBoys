@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Boys Catering Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">Speed Boys <span> Catering</span></a>
+            <nav class="nav" id="mainNav" aria-label="Main Navigation">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+                <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1>Speed Boys Catering Service</h1>
+                <p class="lead">Service with a Good Heart ❤️ — Fresh food, friendly service, memorable events.</p>
+                <div class="hero-ctas">
+                    <a class="btn primary" href="#menu">Explore Menu</a>
+                    <button class="btn ghost" id="openPopup">See Specials</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <h2>About Us</h2>
+            <p>
+                At Speed Boys Catering, we deliver fast, fresh, and heart-filled service for every occasion. Whether it's weddings,
+                birthdays, corporate events, or celebrations, our team ensures high-quality food, hygiene, and hospitality.
+            </p>
+        </section>
+
+        <section id="services" class="services container">
+            <h2>Our Special Services</h2>
+            <div class="service-grid">
+                <article class="card">
+                    <h3>Wedding Catering</h3>
+                    <p>Traditional & modern dishes with premium service.</p>
+                </article>
+                <article class="card">
+                    <h3>Birthday Parties</h3>
+                    <p>Fun-filled menus for all age groups.</p>
+                </article>
+                <article class="card">
+                    <h3>Corporate Events</h3>
+                    <p>Professional and timely service for business gatherings.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="menu" class="menu container">
+            <h2>Signature Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-item card">South Indian Meals</div>
+                <div class="menu-item card">Hyderabadi & Kolkata Biryanis</div>
+                <div class="menu-item card">Starters & Tiffin</div>
+                <div class="menu-item card">Desserts & Sweets</div>
+            </div>
+        </section>
+
+        <!-- POPUP -->
+        <div id="popup" class="popup" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="popup-box" role="document">
+                <button class="close" id="closePopup" aria-label="Close">×</button>
+                <h2>🍽 Our Signature Dishes</h2>
+                <p>South Indian Meals, Biryanis, Starters, Desserts & More!</p>
+            </div>
+        </div>
+
+        <section id="contact" class="contact container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+                    <button class="btn primary" type="submit">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+                    <p>📧 <strong>Email:</strong> speedboyscatering@gmail.com</p>
+                    <p>📍 <strong>Location:</strong> Tirunelveli, Tamil Nadu</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 Speed Boys Catering Service — All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
